@@ -24,9 +24,9 @@ The word 'snack' can be formed by concatenating the symbols of 3 different combi
 So elementalForms('snack') should return the following array:
 
     [
-      ['Sulfur (S)', 'Nitrogen (N)', 'Actinium (Ac)', 'Potassium (K)'],
-      ['Sulfur (S)', 'Sodium (Na)', 'Carbon (C)', 'Potassium (K)'],
-      ['Tin (Sn)', 'Actinium (Ac)', 'Potassium (K)']
+      ["Sulfur (S)", "Nitrogen (N)", "Actinium (Ac)", "Potassium (K)"],
+      ["Sulfur (S)", "Sodium (Na)", "Carbon (C)", "Potassium (K)"],
+      ["Tin (Sn)", "Actinium (Ac)", "Potassium (K)"]
     ]
 
 ### Guidelines
