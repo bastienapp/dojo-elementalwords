@@ -15,9 +15,27 @@ class ElementalWords {
 
 	public String[][] elementalForms(String word) {
 
-		// TODO
+		process(word, new ArrayList<String>());
 
 		return this.results.toArray(new String[0][0]);
+	}
+
+	public void process(String chunk, List<String> elements) {
+		String current = "";
+		for (int i = 0; i < chunk.length() && (i <= 1); i++) {
+			current += chunk.charAt(i);
+			String element = getElement(current);
+			if (element != null) {
+				List<String> clonedElements = new ArrayList<String>(elements);
+				clonedElements.add(element);
+				String nextChunck = chunk.substring(i + 1);
+				if (nextChunck.length() > 0) {
+					process(nextChunck, clonedElements);
+				} else {
+					results.add(clonedElements.toArray(new String[0]));
+				}
+			}
+		}
 	}
 
 	private String getElement(String letters) {

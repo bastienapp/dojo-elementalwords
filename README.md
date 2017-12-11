@@ -1,4 +1,4 @@
-#Elemental Words
+# Elemental Words
 
 Each element in the periodic table has a symbol associated with it. For instance, the symbol for the element Yttrium is Y. A fun thing to do is see if we can form words using symbols of elements strung together. The symbol for Einsteinium is Es, so the symbols for Yttrium and Einsteinium together form:
 
@@ -8,7 +8,7 @@ Yes! Ignoring capitalization, we can think of any string of letters formed by th
 
 Your task is to implement the function elementalForms(word), which takes one parameter (the string word), and returns an array (which we'll call forms). If word can be formed by combining element symbols from the periodic table, then forms should contain one or more sub-arrays, each consisting of strings of the form 'elementName (elementSymbol)', for each unique combination of elements that can form word.
 
-###Example
+### Example
 
 The word 'snack' can be formed by concatenating the symbols of 3 different combinations of elements:
 
@@ -29,7 +29,7 @@ So elementalForms('snack') should return the following array:
       ['Tin (Sn)', 'Actinium (Ac)', 'Potassium (K)']
     ]
 
-###Guidelines
+### Guidelines
 
 * Capitalization does not matter:
 
@@ -41,7 +41,7 @@ So elementalForms('snack') should return the following array:
 * The order of the returned sub-arrays does not matter, but the order of the strings within each sub-array does matter -- they should be in the order that "spells out" word.
 * If word is not an elemental word (that is, no combination of element symbols can form word), return an empty array.
 * You do not need to check the type of word. It will always be a (possibly empty) string.
-* Finally, the helper object ELEMENTS has been provided, which is a map from each element symbol to its corresponding full name (e.g. ELEMENTS['Na'] === 'Sodium'). Have fun!
+* Finally, the helper method getElement has been provided, which is a map from each element symbol to its corresponding full name (e.g. getElement("Na") === "Sodium (Na)"). Have fun!
 
 Rappel des commandes junit :
 
